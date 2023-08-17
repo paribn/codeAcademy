@@ -1,4 +1,9 @@
-    .category{
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   .category{
         display: grid;
         grid-template-columns: auto auto;
         padding: 10px;
@@ -7,25 +12,36 @@
         
     }  
     .item:nth-child(1):hover{
-        background-color: rgb(112, 112, 232);
-        transition: all .3s;
+         background-color: rgb(112, 112, 232); 
+        transition: all .7s; 
+        transform: scale(1.1); 
+
+
     }
     .item:nth-child(2):hover{
-        background-color: rgb(64, 244, 124);
+        background-color: rgb(64, 244, 124); 
+        transform: scale(1.1); 
+        transition: all .7s; 
+
     }
     .item:nth-child(3):hover{
         background-color: rgb(181, 141, 219);
+        transition: all .7s; 
+        transform: scale(1.1); 
+
     }
     .item:nth-child(4):hover{
         background-color: rgb(225, 225, 21);
+        transition: all .7s; 
+        transform: scale(1.1); 
     }
 
     .item{
-        width: 400px;
+        width: 300px;
         border: 1px solid rgb(222, 219, 219);
-        transition: all .3s;
-        
+
     }
+   
 
     .item h2 {
         padding: 25px;
@@ -33,14 +49,7 @@
         opacity: 0.7;
 
     }
-    .item img {
-        padding: 25px;
-    }
-
-    .teach{
-        margin-left: 20px;
-        margin: 30px;
-    }
+  
 
     p {
         display: inline-block;
@@ -49,12 +58,11 @@
 
     .container{
         display: flex;
-    align-items: center;
+        align-items: center;
     }
 
     .ptag ,.teachCategory{
-        margin: -135px;
-        margin-left: 100px;
+        margin-left: 150px;
         font-size: 55px;
         font-family: 'Montserrat', sans-serif;
     
@@ -69,9 +77,11 @@
         opacity: 0.7;
         letter-spacing: -3px;
 
+
     }
 
     .text{
+        padding: 50px;
         margin-left: 100px;
         font-family: 'Montserrat', sans-serif;
         opacity: 0.7;
@@ -80,8 +90,45 @@
     .log{
         margin: 100px;
     }
+   svg{
+    margin: 20px;
+   }
+   .elementor-widget-container img{
+   margin-left: 150px;
+   }
+   
+   @media screen and  ( max-width:800px) {
+    .container{
+        width: 50%;
+        margin:1%;
+        display: block;
+    }
+   
+
+   }
+   @media screen and  ( max-width:800px) {
+    .category{
+        width:50%;
+        margin:1%;
+        display: block;
 
 
+    }
+    .teachCategory{
+        font-size: 30px;
+        padding: 1rem;
+        width: auto;
+        height: auto;
+    } 
+    .ptag{
+        font-size: 30px;
+        padding: 1rem;
+        width: auto;
+        height: auto;
+    } 
+
+     
+   }
     
      
      
